@@ -1,0 +1,61 @@
+/* body的margin默认是8px */
+body{
+  margin: 0;
+}
+
+/* 去掉hx、p的margin, 设置字体粗细 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+  font-weight: normal;
+}
+
+/*  */
+div{
+  box-sizing: border-box;
+}
+
+/* 去掉a标签的下划线 */
+a{
+  text-decoration: none;
+}
+
+/* 去掉ul的padding/margin/列表样式 */
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+input,
+button{
+  outline: none;
+  box-sizing: border-box;
+}
+
+img{
+  height: 100%;
+}
+
+/* 清除浮动 */
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 一行显示 + 省略号 */
+.ellipse{  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 不换行 */
+  white-space: nowrap;
+}
