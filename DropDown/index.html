@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>下拉菜单</title>
+  <link rel="stylesheet" href="css/dropdown.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="dropdown">
+      <a href="javascript:;" class="main">下拉菜单</a>
+      <ul class="list">
+        <li class="item"><a href="">第1个项目</a></li>
+        <li class="item"><a href="">第2个项目</a></li>
+        <li class="item"><a href="">第3个项目</a></li>
+        <li class="item"><a href="">第4个项目</a></li>
+        <li class="item"><a href="">第5个项目</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <a href="javascript:;" class="main">下拉菜单</a>
+      <ul class="list">
+        <li class="item"><a href="">第1个项目</a></li>
+        <li class="item"><a href="">第2个项目</a></li>
+        <li class="item"><a href="">第3个项目</a></li>
+        <li class="item"><a href="">第4个项目</a></li>
+        <li class="item"><a href="">第5个项目</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/tools.js"> </script>
+  <script type="text/javascript" src="js/dropdown.js"> </script>
+  <script type="text/javascript">
+    /* 下拉菜单插件
+     * 配置项
+     * dropdown：元素
+     *        项数
+     */
+    new DropDown({
+      dropdown: document.getElementsByClassName('dropdown')[0],
+    });
+
+    new DropDown({
+      dropdown: document.getElementsByClassName('dropdown')[1],
+    });
+  </script>
+</body>
+
+</html>

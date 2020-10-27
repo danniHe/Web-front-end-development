@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="todoList">
+    <div>
+      <input type="text" id="js-todo-input" placeholder="输入添加项" />
+      <button class="js-add-btn">添加项</button>
+    </div>
+    <div>
+      TODOLIST: <span class="js-text"></span>
+    </div>
+    <ul class="js-list"></ul>
+  </div>
+
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    new TodoList({
+      todoList: document.getElementById('todoList'),
+      arr: []
+    })
+  </script>
+</body>
+
+</html>

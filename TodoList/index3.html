@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TodoList</title>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/index1.css" />
+</head>
+
+<body>
+  <!-- 配置项 -->
+  <div class="todo-wrap" data-config='{
+    "plusBtn": "j-plus-input",
+    "inputArea": "input-wrap",
+    "addBtn": "j-add-item",
+    "list": "item-list",
+    "itemClass": "item"
+  }'>
+
+    <!-- 头部 -->
+    <div class="list-hd">
+      <h2>TodoList</h2>
+      <a href="javascript:;" class="j-plus-input fa fa-plus"></a>
+    </div>
+
+    <!-- 输入框 -->
+    <div class="input-wrap">
+      <div class="input-bd">
+        <input type="text" class="content" />
+      </div>
+      <div class="btn-bd">
+        <button class='j-add-item'>增加项目</button>
+      </div>
+    </div>
+
+    <!-- 列表项 -->
+    <div class="list-wrap">
+      <ul class="item-list"></ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/index3.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.wrap .dropdown{
+  float: left;
+}
+
+.dropdown{
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+}
+
+.dropdown a{
+  display: block;
+}
+
+.dropdown .main{
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+/* 伪元素实现箭头图标，默认向下 */
+.dropdown::after{
+  content: "";
+  display: table;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../icons/arrow-down.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* 向上的箭头图标 */
+.dropdown.up::after{
+  background-image: url(../icons/arrow-top.png);
+}
+
+/* 下拉列表默认隐藏 */
+.dropdown .list{
+  height: 0;
+  overflow: hidden;
+}   
+
+.dropdown .item{
+  height: 40px;
+  background-color: #333;
+}
+
+.dropdown .item:hover{
+  background-color: #000;
+}
+
+.dropdown .item a{
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #999;
+}

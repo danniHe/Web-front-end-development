@@ -1,0 +1,55 @@
+.bk-list .list-item{
+  position: relative;
+  height: 150px;
+  border-bottom: 1px solid #ddd
+}
+
+.bk-list .list-item .item-lk{
+  display: block;
+  height: 100%;
+}
+
+/* 两栏布局 */
+.bk-list .list-item .bk-pic{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  padding: 10px;  
+}
+
+.bk-list .list-item .bk-info{
+  height: 100%;
+  margin-left: 118px;
+  color: #424242;  
+}
+
+.bk-list .list-item .bk-info h2,
+.bk-list .list-item .bk-info p{
+  padding-top: 10px;
+}
+
+/* 一行显示 + 省略号 */
+.bk-list .list-item .bk-info .intro{  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 不换行 */
+  white-space: nowrap;
+  color: #999;
+}
+
+.s-top-btn{
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: url(../imgs/rocket.png) no-repeat 0 0/100% 100%;
+  border-radius: 50%;
+  opacity: .6;
+}
+
+.s-top-btn:hover{
+  opacity: 1;
+}

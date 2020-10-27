@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>点播图片-蜡笔小新</title>
+  <link rel="stylesheet" type="text/css" href="css/slider.css" />
+
+</head>
+
+<body>
+  <div id="J_data" style="display: none">
+    [{"id":"1","img":"1.jpg"},{"id":"2","img":"2.jpg"},{"id":"3","img":"3.jpg"},{"id":"4","img":"4.jpg"},{"id":"5","img":"5.jpg"},{"id":"6","img":"6.jpg"}]
+  </div>
+
+  <div class="slider-wrap">
+    <div class="slider">
+      <ul class="slider-list J_sliderList"></ul>
+    </div>
+
+    <div class="thumbs">
+      <ul class="thumbs-list J_thumbsList"></ul>
+    </div>
+  </div>
+
+
+  <!-- 模板 -->
+  <script type="text/html" id="J_sliderTpl">
+    <li class="slider-item">
+      <a href="">
+        <img src="imgs/{{img}}" alt="" />
+      </a>
+    </li>
+  </script>
+
+  <script type="text/html" id="J_thumbTpl">
+    <li class="thumb-item">      
+      <a href="javascript:;">
+        <img src="imgs/{{img}}" alt="" />
+      </a>
+    </li>
+  </script>
+
+  <script type="text/javascript" src="js/tools.js"></script>
+  <script type="text/javascript" src="js/sliderCopy.js"></script>
+  <script type="text/javascript">
+    var slider = new Slider({
+      cur: 'cur',
+      active: 'active',
+      sliderList: 'J_sliderList',
+      thumbsList: 'J_thumbsList',
+      sliderTpl: 'J_sliderTpl',
+      thumbTpl: 'J_thumbTpl',
+      data: 'J_data'
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TodoList</title>
+  <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/index2.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- 头部 -->
+    <div class="list-hd">
+      <h2>TodoList</h2>
+      <a href="javascript:;" class="j-show-input plus iconfont">&#xe6dc;</a>
+    </div>
+
+    <!-- 输入框 -->
+    <div class="input-wrap">
+      <div class="input-bd">
+        <input type="text" id="textInput" />
+      </div>
+      <div class="btn-bd">
+        <button class='j-add-item'>增加项目</button>
+      </div>
+    </div>
+
+    <!-- 列表项 -->
+    <div class="list-wrap">
+      <ul class="j-list"></ul>
+    </div>
+  </div>
+
+  <script type="text/tpl" id="listTpl">
+    <p class="item-content">{{text}}</p>
+    <div class="btn-group">
+      <a href="javascript:;" class="edit-btn iconfont">&#xe604;</a>
+      <a href="javascript:;" class="remove-btn iconfont">&#xe62a;</a>
+    </div>
+  </script>
+
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/index2.js"></script>
+
+</body>
+
+</html>
